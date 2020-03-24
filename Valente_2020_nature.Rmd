@@ -1,0 +1,112 @@
+---
+title: "Notes on Valente et al. (2020). A simple dynamic model explains the diversity of island birds worldwide. Nature."
+author: "doi.org/10.1038/s41586-020-2022-5"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Context
+
+Thanks to the MacArthur and Wilson theory of island biogeography, the two most prominent biodiversity relationships predicted in fragmented or isolated environments worldwide are: 
+
+- the *increase* in species richness with **area** 
+- the *decline* in species richness with **isolation** 
+
+MacArthur and Wilson proposed that the **rates of colonization and extinction** explain these relationships. Specifically, that: 
+
+- colonization *decreases* with isolation 
+- extinction *decreases* with area
+- also that in-situ speciation rates *increase* with isolation and area
+
+Though this theory is fundamental in biogeography, macroecology, and generally in our theoretical understanding of how diversity is structured and distributed across the world, there are few **tests** of these predictions, specifically in terms of the **underlying processes** (colonization, extinction, and speciation rates) in relation to **geographical context** (island area, isolation).
+
+### Objective
+
+"reveal, for island birds, the empirical shape of the general relationships that determine how colonization, extinction and speciation rates co-vary with the area and isolation of islands"
+
+### Approach
+
+- **time-calibrated molecular phylogenies** of insular species
+- **dynamic stochastic model DAISIE** (dynamic assembly of islands through speciation, immigration and extinction) 
+- use these two to estimate maximum-likelihood rates of colonization, extinction and speciation rates (CES rates) **from branching times**
+- also to estimate endemicity status of species that results from one or multiple independent colonizations of a given island system
+- detect the presence or absence of diversity dependence in rates of colonization and speciation, by estimating a carrying capacity
+
+The main novelty of the paper is the *extension of the DAISIE framework* to estimate **hyper-parameters** that control the relationship between archipelago area and isolation, and **archipelago-specific local CES rates**: 
+
+- cladogenesis (within-archipelago speciation that involves in situ lineage splitting) 
+- anagenesis (within-archipelago speciation by divergence from the mainland without in-situ lineage splitting) 
+- natural extinction rates 
+- carrying capacity
+
+### Data
+
+- Terrestrial birds of 41 oceanic archipelagos worldwide (596 insular avian taxa, 491 species) 
+- includes 502 archipelago colonization events and 26 independent in situ "radiations" (2-33 species) 
+- oceanic: volcanic islands that have never been connected to any other landmass in the past
+
+*note on extinctions*: 
+"We do not count extinctions with anthropogenic causes as influencing the natural background rate of extinction. Therefore, we explicitly include species for which there is strong evidence that they have been extirpated by humans. We treat taxa extirpated on an archipelago by humans as though they had survived in that archipelago until the pre-sent following our previously published approach"
+
+*"(Our dataset accounts for 153 taxa that were present on first human contact and have gone extinct since, probably because of human activities including the introduction of invasive species by humans.)"*
+
+### DAISIE
+
+DAISIE estimates rates of species accumulation through stochastic processes (colonization, speciation and extinction) on the archipelagos.
+
+**Assumptions:**
+
+After the origin of an island, species can colonize from a mainland pool. Once a species has colonized, it may: 
+- remain similar to its mainland ancestor (non-endemic species) 
+- become endemic through anagenetic speciation
+- split into new species via cladogenetic speciation 
+- and/or go extinct. 
+
+A **carrying capacity** (that is, the maximum number of species each colonist lineage can attain) is implemented, such that rates of cladogenesis and colonization decline with increasing number of species in the colonizing clade.
+
+In its parameterization of **extinction**, DAISIE accounts for the fact that there may have been several lineages that were present on the insu-lar system in the past but that went completely extinct due to natural causes, leaving no extant descendants. Simulations have shown that the rate of natural extinction is usually well estimated in DAISIE.
+
+### Model construction
+
+Fit a set of 28 candidate models to a global dataset:
+
+**A priori models (14)**
+
+CES rates are determined by a power function of area or distance.
+
+$$par = par_0 I^h$$
+where 
+$par$ is the CES rate (for example, local rate of colonization)
+$par_0$ is the initial value of the biogeographical rate (for example, global initial rate of colonization)
+$I$ is the physical variable (area or distance)
+$h$ is the strength of the relationship. 
+
+The exponent h can be negative or positive depending on the nature of the relationship. par0 and h are the hyperparameters. If the exponent h is estimated as zero, there is no relationship between I and the parameter. 
+
+**Post-hoc models (14)**
+
+- fitted two types of post hoc models: power models and sigmoid model
+
+*Power models* 
+same as the a priori models, but cladogenesis was allowed to depend on both area and isolation (reason:  found that the predicted number of cladogenetic species under the a priori models were not as high as observed, so we examined whether including a positive effect of distance would improve the fit).
+
+*Sigmoid models* 
+wanted to investigate whether, for birds, the effect of distance on a parameter only starts to operate after a certain distance from the mainland, as below certain geographi-cal distances archipelagos are within easy reach for many bird species by flight, so that at these distances the island behaves almost as part of the mainland from a bird’s perspective
+
+### Preferred model (M19)
+
+- includes only 8 parameters (at least 12 parameters would be needed if each rate depended on area and isolation, and at least 164 parameters if each archipelago was allowed to have its own parameters) 
+- The ability of the model to explain observed values (total species, pseudo-R2 = 0.72; cladogenetic species, pseudo-R2 = 0.52; colonizers, pseudo-R2 = 0.60) was very high 
+- simulated archipelago communities under the best model (M19) and found that—for most archipelagos—the observed diversity metrics (the numbers of species, cladogenetic species and colonizations) were similar to the expected numbers, with some exceptions 
+
+### Main findings
+
+Simulations using parameters estimated from data were able to reproduce the classic global observed relationships between area, distance and diversity metrics predicted in island biogeography theory across 41 archipelagos (Fig. 4)
+- evidence for a decline in the rates of colonization with isolation  
+- evidence for a decline in the rates of extinction with area 
+confirming two of the key assumptions of island biogeography theory!
+
+The colonization–isolation effect was detected despite the fact that the decline in avian species richness with distance from the nearest mainland in our empirical data was not as pronounced as in other less-mobile taxa, revealing that isolation is a clear deter-minant of the probability of immigration and the successful establish-ment of populations even in a highly dispersive group such as birds.
