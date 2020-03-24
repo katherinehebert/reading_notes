@@ -1,7 +1,10 @@
 ---
-title: "Notes on Valente et al. (2020). A simple dynamic model explains the diversity of island birds worldwide. Nature."
+title: Notes on Valente et al. (2020). A simple dynamic model explains the diversity
+  of island birds worldwide. Nature.
 author: "doi.org/10.1038/s41586-020-2022-5"
-output: pdf_document
+output:
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -104,9 +107,18 @@ wanted to investigate whether, for birds, the effect of distance on a parameter 
 
 ### Main findings
 
-Simulations using parameters estimated from data were able to reproduce the classic global observed relationships between area, distance and diversity metrics predicted in island biogeography theory across 41 archipelagos (Fig. 4)
-- evidence for a decline in the rates of colonization with isolation  
-- evidence for a decline in the rates of extinction with area 
+Simulations using parameters estimated from data were able to reproduce the classic global observed relationships between area, distance and diversity metrics predicted in island biogeography theory across 41 archipelagos (Fig. 4)  
+- evidence for a decline in the rates of colonization with isolation   
+- evidence for a decline in the rates of extinction with area  
 confirming two of the key assumptions of island biogeography theory!
 
 The colonization–isolation effect was detected despite the fact that the decline in avian species richness with distance from the nearest mainland in our empirical data was not as pronounced as in other less-mobile taxa, revealing that isolation is a clear deter-minant of the probability of immigration and the successful establish-ment of populations even in a highly dispersive group such as birds.
+
+
+### Discussion points
+
+- what is a hyper-parameter? what is it useful for?
+- we found this study to be quite robut, but what makes a study robust? (a lot of sensitivity analyses about parameter choices? testing sensitivity to sample size, structure of dataset, etc.?)
+- would considering interactions contribute anything more to the model? 
+- what other variables (habitat? plants?) would you have added to a model like this (habitat filtering)?
+- bootstrap - what is it?
