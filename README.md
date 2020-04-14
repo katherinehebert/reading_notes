@@ -1,2 +1,1 @@
-# reading_notes
- Notes on article readings
+# Notes on readings from articles related to my PhD
