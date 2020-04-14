@@ -1,0 +1,98 @@
+---
+title: Notes on Trisos, Merow & Pigot (2020). The projected timing of abrupt ecological
+  disruption from climate change. Nature.
+author: "https://doi.org/10.1038/s41586-020-2189-9"
+output: pdf_document
+---
+
+```{r set up, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+## run this to knit PDF when ready ##
+#rmarkdown::render('~/Documents/GitHub/reading_notes/scripts/Trisos_2020_nature.Rmd', output_file = '~/Documents/GitHub/reading_notes/notes/Trisos_2020_nature.pdf')
+```
+
+## Context
+
+We know climate change is a lead driver of biodiversity loss, but we don't know whether the process of biodiversity loss will be **gradual** or **abrupt**. This is because:
+
+- most forecasts lack a temporal perspective, instead offering a *snapshot* of the future (usually the end of this century). 
+- focus on species *individually*, rather than focusing on **assemblages**
+
+It is important to quantify "the differences among species in the time at which their climate niche limits may be locally exceeded", to better understand how ecological assemblages will encounter climate change.
+
+## Concepts & terms
+
+#### Biodiversity climate horizon
+
+A species' realized niche is bound by the "range of climate conditions, over both space and time, under which a species has been recorded in the wild". These boundaries are a **climate horizon** - beyond these conditions, there is no evidence that the species can persist. In other words, best case = high uncertainty of species' survival, and worst case = local extinction.
+
+#### Horizon profile
+
+In a given assemblage, the horizon profile is "the cumulative percentage of species over time that have been locally exposed to climate conditions beyond their realized niche limits".
+
+This profile provides additional info about the potential for climate-driven disruption of species assemblages over time (early/abrupt disruption especially) via its **shape**. This is not possible when focusing on single species.
+
+There are 3 key features of horizon profiles:
+
+- **timing**: median year for an assemblage in which species exposure to unprecedented climate occurs;
+- **magnitude**: the percentage of species locally exposed;
+- **abruptness**: the synchronicity in the timing of exposure among species in an assemblage*
+
+* this is measured as the percentage of all species exposure times that occur in the decade of maximum exposure.
+
+#### Local species exposure time
+
+Inherits from the **"time of emergence"** concept in climate science, which is "the time at which the signal of anthropogenic climate change at a location emerges from the envelope of historical climate variability".
+
+Here, exposure time is the "year after which projected local temperatures consistently exceed—for at least 5 years—the maximum temperature experienced by the species across its geographic range during historical climate projections (1850–2005)".
+
+
+## Objective / Main findings
+
+"Here we use annual projections (from 1850 to 2100) of temperature and precipitation across the ranges of more than 30,000 marine and terrestrial species to estimate the timing of their exposure to potentially dangerous climate conditions. We project that future disruption of ecological assemblages as a result of climate change will be abrupt, because within any given ecological assemblage the exposure of most species to climate conditions beyond their realized niche limits occurs almost simultaneously."
+
+## Approach
+
+- delimited assemblages as the species occurring in 100-km grid cells based on expert-verified geographic range maps.
+- constructed **horizon profiles** for species assemblages globally
+- quantified **timing, magnitude, and abruptness** from horizon profiles
+
+## Data
+
+- 30,652 species of birds, mammals, reptiles, amphibians, marine fish, ben-thic marine invertebrates, krill, cephalopods, and habitat-forming corals and seagrasses 
+- climate projections throughout the twenty-first century from 22 climate models
+- 3 RCPs: strong mitigation (RCP 2.6), moderate mitigation (RCP 4.5) and a high-emissions scenario (RCP 8.5)
+- mean annual temperature as the main proxy for climate
+
+## Main findings
+
+**Timing of exposure** 
+
+- "Under RCP 8.5, the global mean year of assemblage-level exposure is 2074 (±11 years (s.d.)), but there is considerable variation in the timing of exposure across assemblages" 
+- "Notably, the timing of these assemblage-level exposure events is not well predicted by the timing of local climate emergence" 
+- "The timing of abrupt exposure events lags behind local climate emergence by 42 years (±12 years; mean ± s.d.), indicating the potential time-lag between climate change and ensuing biotic responses" 
+
+**Magnitude of exposure** 
+
+- "greatest in the tropics, where narrow historical climate variability and shallow thermal gradients mean that many species occur close to their upper realized thermal limits throughout their geographic range."  
+- 8% of terrestrial and 39% of tropical marine assemblages are projected to have more than 20% of their constituent species exposed to unprecedented temperatures by 2100, compared with 7% of terrestrial and 1% of marine assemblage outside the tropics 
+
+**Abruptness of exposure** 
+
+- Highly synchronized species exposure within assemblages: "Under RCP 8.5, on average 71% (median) of local species exposure times for any given assemblage are projected to occur within a single decade, with the abruptness of exposure higher among marine assemblages (median abruptness 89% than on land (median abruptness 61%)" 
+- "Marine organisms—especially seagrasses, corals, cephalopods, marine reptiles and marine mammals—exhibit the most abrupt profiles, but it is the consistency of abruptness across groups, rather than the differences, that is most notable." 
+- "This pervasive pattern of abrupt exposure arises primarily because co-occurring species often share similar realized thermal limits, rather than abruptness being dependent on higher rates of warming." 
+
+**Overall** 
+
+- "Compared to RCP 8.5, achieving RCP 2.6 delays exposure for the most at-risk species by approximately 6 decades in the oceans and on land" 
+- Abruptness is positively correlated with the magnitude of exposure (i.e. exposure events involving large fractions of species are projected to occur more aburptly - or rapidly) 
+- "Defined *assemblages at risk of abrupt ecological disruption* as those in which at least 20% of species are pro-jected to undergo exposure to unprecedented temperatures within the same decade." 
+
+## Discussion points
+
+- "the risk of disruption of ecological function may be underestimated in this analysis because even if particular functional groups (for example, habitat-forming corals) suffer high levels of exposure, this may not be evident at the scale of entire assemblages if other groups are relatively less affected."
+- "We do not consider the potential for immigration of species from elsewhere to offset local biodiversity losses; however, abrupt assemblage-wide exposure is likely to cause substantial ecological disruption regardless of the rate at which new species arrive."
+- "does not consider changes in extreme events, effects of warming on local habitat (for example, melting sea ice), covariation between climate variables32, or that populations may be locally adapted"
+- "Species may have wider fundamental niche limits than realized niche limits13,30, may avoid exposure in microclimatic refugia, or through behavioural thermoregulation, or may evolve to tolerate new conditions." 
+- "the timing of abrupt assemblage exposure events could be considered an **‘ignorance horizon’**—the time beyond which local extinctions are not inevitable but evidence for the ability of species to persist in the wild is largely absent13. Thus, at the very least, our results show that within 30 years, continued high emissions will drive a sudden shift across many ecologi-cal assemblages to climate conditions under which we have almost no knowledge of the ability of their constituent species to survive."
