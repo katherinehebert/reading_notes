@@ -4,13 +4,12 @@ title: Notes on Valente et al. (2020). A simple dynamic model explains the diver
 author: "doi.org/10.1038/s41586-020-2022-5"
 output:
   pdf_document: default
-  word_document: default
 ---
 
 ```{r set up, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ## run this to knit PDF when ready ##
-#rmarkdown::render('~/Documents/GitHub/reading_notes/scripts/Valente_2020_nature.Rmd', output_file = '~/Documents/GitHub/reading_notes/Valente_2020_nature.pdf')
+#rmarkdown::render('~/Documents/GitHub/reading_notes/scripts/Valente_2020_nature.Rmd', output_file = '~/Documents/GitHub/reading_notes/notes/Valente_2020_nature.pdf')
 ```
 
 ### Context
