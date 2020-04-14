@@ -5,6 +5,8 @@ author: "https://doi.org/10.1038/s41586-020-2189-9"
 output: pdf_document
 ---
 
+*excellent commentary from Jennifer Sunday (2020, Nature) "The pace of biodiversity change in a warming world" summarises this too*
+
 ```{r set up, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ## run this to knit PDF when ready ##
