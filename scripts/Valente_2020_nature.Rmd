@@ -7,8 +7,10 @@ output:
   word_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r set up, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+## run this to knit PDF when ready ##
+#rmarkdown::render('~/Documents/GitHub/reading_notes/scripts/Valente_2020_nature.Rmd', output_file = '~/Documents/GitHub/reading_notes/Valente_2020_nature.pdf')
 ```
 
 ### Context
