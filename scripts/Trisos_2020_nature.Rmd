@@ -93,6 +93,7 @@ Here, exposure time is the "year after which projected local temperatures consis
 
 ## Discussion points
 
+- would be super interesting to know if the species who are first being exposed to new conditions are at certain trophic levels (lower? higher?), or if it is throughout all trophic levels
 - "the risk of disruption of ecological function may be underestimated in this analysis because even if particular functional groups (for example, habitat-forming corals) suffer high levels of exposure, this may not be evident at the scale of entire assemblages if other groups are relatively less affected."
 - "We do not consider the potential for immigration of species from elsewhere to offset local biodiversity losses; however, abrupt assemblage-wide exposure is likely to cause substantial ecological disruption regardless of the rate at which new species arrive."
 - "does not consider changes in extreme events, effects of warming on local habitat (for example, melting sea ice), covariation between climate variables32, or that populations may be locally adapted"
