@@ -1,0 +1,34 @@
+---
+title: Notes on May (1972). Will a Large Complex System
+be Stable?. Nature.
+output:
+  pdf_document: default
+---
+
+```{r set up, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+## run this to knit PDF when ready ##
+rmarkdown::render(
+  '~/Documents/GitHub/reading_notes/scripts/May_1972_Nature.Rmd',
+  output_file = '~/Documents/GitHub/reading_notes/notes/May_1972_Nature.pdf')
+```
+
+### Context
+
+"Gardner and Ashby have suggested that large complex systems which are assembled (connected) at random may be expected to be stable up to a certain critical level of connectance, and then, as this increases, to suddenly become unstable. Their conclusions were based on the trend of computer studies of systems with 4, 7 and 10 variables."
+
+### Objective
+
+"The object is to clarify the relation between stability and complexity in ecological systems with many interacting species, and some conclusions bearing on this question are drawn from the model." (May 1972:413)
+
+### Approach
+
+Analytical dissection of large random matrices to determine the properties of their stability.
+
+### Main findings
+
+"The central feature of the above results for large systems is the very sharp transition from stable to unstable behaviour as the complexity (as measured by the connectance and the average interaction strength) exceeds a critical value" (May 1972:414)
+
+"Too rich a web connectance (too large a C) or too large an average interaction strength (too large an a) leads to instability. The larger the number of species, the more pronounced the effect" (May 1972:414)
+
+Such examples suggest that our model multi-species communities, for given average interaction strength and web connectance, will do better if the interactions tend to be arranged in "blocks"-again a feature observed in many natural ecosystems" (May 1972:414)
