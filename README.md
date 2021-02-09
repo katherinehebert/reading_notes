@@ -12,7 +12,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/katherinehebert"><img src="https://avatars.githubusercontent.com/u/27461233?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Katherine Hébert</b></sub></a><br /><a href="https://github.com/katherinehebert/reading_notes/commits?author=katherinehebert" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/katherinehebert"><img src="https://avatars.githubusercontent.com/u/27461233?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Katherine Hébert</b></sub></a><br /><a href="https://github.com/katherinehebert/reading_notes/commits?author=katherinehebert" title="Code">💻</a> <a href="#design-katherinehebert" title="Design">🎨</a></td>
   </tr>
 </table>
 
