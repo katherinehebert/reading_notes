@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "katherinehebert",
+      "name": "Katherine Hébert",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27461233?v=4",
+      "profile": "https://github.com/katherinehebert",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "reading_notes",
+  "projectOwner": "katherinehebert",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
